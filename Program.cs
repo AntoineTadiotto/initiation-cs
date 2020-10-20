@@ -10,13 +10,13 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int[] age = { 13, 12, 70, 14, 20, 50 };
-            string[] prenom = { "antoine", "gregory", "sami", "thomas", "anthony", "baptiste" };
-            int l = age.Length;
-            for (int i = 0; i < l; i++)
+            var fruits = new List<string> { "pomme", "poire", "orange", "banane", "kiwi" };
+            fruits.Remove("banane");
+            foreach (var fruit in fruits)
             {
-                Console.WriteLine(prenom[i] + " : " + age[i]);
+                Console.WriteLine(fruit);
             }
+            
             Console.ReadLine();
         }
     }
